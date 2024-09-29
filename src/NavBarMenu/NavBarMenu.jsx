@@ -4,8 +4,8 @@ import Menu from "../Menu/Menu";
 
 const activeButton = "bg-four";
 const activeColor = "bg-four/50";
-const activetext = "text-white";
-const activeBorder = "bg-third";
+const activetext = "text-second";
+const activeBorder = "bg-primary";
 
 const NavBarMenu = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -32,11 +32,11 @@ const NavBarMenu = () => {
             return (
               <li key={id} onClick={() => handleClick(id)}>
                 <div
-                  className={`flex justify-center items-center w-48 rounded-lg cursor-pointer p-3 border mr-2  
+                  className={`flex justify-center items-center w-48 rounded-lg cursor-pointer p-3 border  mr-2  
                   ${active[id] ? activeBorder : ""}`}
                 >
                   <p
-                    className={` text-bold capitalize font-bold ${
+                    className={`  capitalize font-semibold ${
                       active[id] ? activetext : "text-primary"
                     }`}
                   >

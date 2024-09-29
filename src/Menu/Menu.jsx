@@ -21,10 +21,10 @@ const Menu = ({ title }) => {
               />
 
               <div className="flex flex-col items-start justify-start text-gray-800 md:mx-5 my-4 ">
-                <p className="havana-font  text-bold text-base md:text-lg font-bold capitalize ml-2 md:ml-0  py-2 text-four">
+                <p className=" menu_name text-base md:text-lg font-bold capitalize ml-2 md:ml-0  py-2 text-second">
                   {name}
                 </p>
-                <p className="font-bold mx-2 md:mx-0">{price}</p>
+                <p className="font-bold mx-2 md:mx-0 text-white">{price}</p>
               </div>
             </div>
           );
